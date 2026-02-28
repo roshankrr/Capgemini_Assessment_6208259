@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test("task1", async ({ page }) => {
+test("qspiders", async ({ page }) => {
   await page.goto("https://demoapps.qspiders.com/ui?scenario=1");
   await page.locator("//input[@id='name']").fill("Roshan Kumar");
   await page.locator("//input[@id='email']").fill("roshankrr16@gmail.com");

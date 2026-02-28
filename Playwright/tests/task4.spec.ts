@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test("Fetch silver medal count of Armenia", async ({ page }) => {
+test("silver medal", async ({ page }) => {
   await page.goto("https://olympics.com/en/olympic-games/tokyo-2020/medals");
   await page.mouse.wheel(0, 3000);
   const silverMedal = await page
@@ -9,5 +9,5 @@ test("Fetch silver medal count of Armenia", async ({ page }) => {
     )
     .textContent();
   console.log("Silver medals of Armenia:", silverMedal);
-  await page.screenshot({ path: "./screenshot/silverMedal.png" });
+  await page.screenshot({ path: "/screenshot/silverMedal.png" });
 });
