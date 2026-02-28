@@ -9,5 +9,5 @@ test("silver medal", async ({ page }) => {
     )
     .textContent();
   console.log("Silver medals of Armenia:", silverMedal);
-  await page.screenshot({ path: "/screenshot/silverMedal.png" });
+  await page.screenshot({ path: "./screenshot/silverMedal.png" });
 });

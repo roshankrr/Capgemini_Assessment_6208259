@@ -16,5 +16,5 @@ test("amazon", async ({ page }) => {
   console.log(await productname.textContent());
   console.log("Product Price is:");
   console.log(await productprice.textContent());
-  await page.screenshot({ path: "screenshot/amazon.png" });
+  await page.screenshot({ path: "./screenshot/amazon.png" });
 });
