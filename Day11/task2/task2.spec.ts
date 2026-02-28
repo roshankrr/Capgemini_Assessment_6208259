@@ -22,5 +22,5 @@ test("flipcart", async ({ page }) => {
     `//div[@class="QSCKDh dLgFEE"]//div[@class="lvJbLV col-12-12"][2]//div[@class="hZ3P6w DeU9vF"]`,
   );
   console.log(await pricelocator.textContent());
-  page.screenshot({ path: "/screenshot/flipcart" });
+  page.screenshot({ path: "./screenshot/flipcart" });
 });
