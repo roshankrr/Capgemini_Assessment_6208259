@@ -11,7 +11,7 @@ test("task16", async ({ page }) => {
 
   let select = await page
     .locator('//select[@class="product_sort_container"]')
-    .selectOption({ value: "az" });
+    .selectOption({ value: "lohi" });
   let firstItem = await page
     .locator('//div[@class="inventory_item"]//img')
     .first()
