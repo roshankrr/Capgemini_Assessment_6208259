@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import path from "node:path";
 
-test("user_registration task 20", async ({ page }) => {
+test("download_upload task 21", async ({ page }) => {
   await page.goto("https://demoqa.com/upload-download");
   let download_button = await page.locator("#downloadButton").click();
   let image = await "../../../../../Downloads/sampleFile.jpeg";
