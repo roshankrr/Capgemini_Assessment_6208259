@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import path from "node:path";
 
-test("user_registration task 20", async ({ page }) => {
+test("upload task 22", async ({ page }) => {
   await page.goto("https://the-internet.herokuapp.com/upload");
   let image = await "../../../../../Downloads/sampleFile.jpeg";
   let upload = await page.locator(".button");
