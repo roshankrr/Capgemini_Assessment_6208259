@@ -5,6 +5,7 @@
     "moduleResolution": "node",
     "lib": ["ESNext"],
     "types": ["node", "@playwright/test"],
+    "resolveJsonModule": true,
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
