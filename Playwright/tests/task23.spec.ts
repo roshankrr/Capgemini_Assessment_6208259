@@ -6,7 +6,7 @@ import jsondata from "../public/task23data.json";
 //   return path.join(__dirname, pat);
 // };
 
-test("amazon task 23", async ({ page }) => {
+test("amazon task 26", async ({ page }) => {
   await page.goto("https://www.amazon.in/");
   let search = await page.locator("input#twotabsearchtextbox");
   const data = Object.values(jsondata);
