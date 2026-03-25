@@ -8,6 +8,7 @@ export default class Consumer {
   Balance: Locator;
   ChooseConsumerSel: Locator;
   AmountInp: Locator;
+  LogoutBtn: Locator;
 
   constructor(page: Page) {
     this.HomeBtn = page.getByRole("button", { name: "Home" });
@@ -17,5 +18,6 @@ export default class Consumer {
     this.AmountInp = page.getByPlaceholder("amount");
     this.Balance = page.locator('//div[@class="center"]//strong[2]');
     this.ChooseConsumerSel = page.locator("#userSelect");
+    this.LogoutBtn = page.getByRole("button", { name: "Logout" });
   }
 }

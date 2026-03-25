@@ -35,4 +35,5 @@ test("Bank System", async ({ page }) => {
   console.log(balance, Number(data.withdrawAmount));
   await expect(consumer.Balance).toHaveText(String(balance));
   await page.screenshot({ path: "./screenshot/task31.png" });
+  await consumer.LogoutBtn.click();
 });
