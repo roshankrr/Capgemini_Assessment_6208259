@@ -3,6 +3,13 @@ import Login from "../pom/task31/taskLogin.page";
 import Manager from "../pom/task31/bankManager.page";
 import Consumer from "../pom/task31/consumerLogin.page";
 import data from "../public/task31data.json";
+
+test.use({
+  launchOptions: {
+    slowMo: 500,
+  },
+});
+
 test("Bank System", async ({ page }) => {
   await page.goto(data.url);
   let login = new Login(page);
